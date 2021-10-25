@@ -1,0 +1,127 @@
+:: StoryTitle
+Ein gutes altes Stück
+
+:: StoryData
+{
+ "ifid": "CC27BAB4-560E-4917-B67A-5F81AEF2CE89",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "0.6",
+ "start": "Home"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: Home {"position":"196,42.666666666666664","size":"100,100"}
+(b4r:"none","none","double")+(b4r-size:1,1,2)+(b4r-colour:white,white,red)[''Ein gutes altes Stück'']
+
+Willkommen im Jenseits.
+Du öffnest die Augen zu den lauten, dissonanten Klängen eines Synthesizers.
+[[→ Du drehst dich um und schläfst weiter.->Weiter schlafen]]
+[[→ Du wendest dich dem gleissenden Licht zu.->Geblendet]]
+
+:: Weiter schlafen {"position":"103,183.66666666666666","size":"100,100"}
+[[→ Zzzzzzzzz.->Home]]
+
+:: Geblendet {"position":"576,145.66666666666666","size":"100,100"}
+Blinzelnd kuckst du dich um und findest dich in einer Höhle wieder.
+[[→ Du raffst dich auf und verlässt den Bau um ins Sonnenlicht zu treten.->Vor dem Bau]]
+[[→ Du drehst dich um und beginnst die Höhle zu erkunden.->In den Bau]]
+
+:: Vor dem Bau {"position":"1236,188.66666666666666","size":"100,100"}
+Du entschwindest deiner wohligen Höhle und der Duft von frischem Honig erinnert dich an die lauen Sommerabende deiner Kindheit.
+[[→ Für solch schöngeistes Schwelgen ist nun wirklich keine Zeit->keine Zeit]]
+[[→ Deine Gedanken tragen dich weiter und du merkst gar nicht wie weit du schon gegangen bist...->weiter vor den Bau]]
+
+:: In den Bau {"position":"474,335.6666666666667","size":"100,100"}
+Voller Schreck findest du dich von einem dicken Tausendfüssler konfrontiert und drängst dich schnell an ihm vorbei ins Innere der Höhle.
+[[→ Du gehst weiter.->Weiter in den Bau]]
+
+:: Weiter in den Bau {"position":"474,485.6666666666667","size":"100,100"}
+[[→ Die erdige Stille der Höhle verdrängt mit jedem Schritt die Musik. Du gehst weiter.->Weiter 2 in den Bau]]
+[[→ Du presst die Hände an deine Ohren um dich vor der Stille zu schützen und summst laut das Schlaflied aus deiner Kindheit.->Schlaflied]]
+
+:: Weiter 2 in den Bau {"position":"399,635.6666666666666","size":"100,100"}
+Plötzlich fragst du dich, wann du deine Medikamente das letzte Mal genommen hast.
+[[→ Panik.->Panik]]
+(if:visits is 1)[[[→ Egal.->Egal Brownie]]]
+(else:)[[[→ Du zuckst die Achseln und gehst weiter.->Weiter 3 in den Bau]]]
+
+:: Schlaflied {"position":"549,635.6666666666666","size":"100,100"}
+[[→ Das Schlaflied beruhigt dich und du findest den Mut weiter zu gehen.->Weiter 2 in den Bau]]
+
+:: Egal Brownie {"position":"324,785.6666666666666","size":"100,100"}
+In deiner Jackentasche findest du ein angebissenes Brownie – die Zahnabdrücke scheinen tausendfüsslerförmig.
+[[→ Du verschlingst das Brownie.->Ohnmacht]]
+[[→ Du verwendest die Krümel um eine Spur zurück zu legen.->Grimm]]
+[[→ Sorfältig wickelst du das Brownie in ein leicht feuchtes Sonntagstaschentuch um es für schwerere Zeiten aufzuheben.->Weiter 3 in den Bau]]
+
+:: Panik {"position":"474,785.6666666666666","size":"100,100"}
+[[→ Die Tentakel deiner Ängste schneiden dir die Luft ab, du presst die Hände an die Ohren und beginnst laut zu summen.->Schlaflied]]
+
+:: Ohnmacht {"position":"148,781.6666666666666","size":"100,100"}
+[[→ Deine Augen fallen zu und merkst, dass du der Potenz des Tausendfüsslerbrownie's nicht gewachsen bist.->Home]]
+
+:: Grimm {"position":"324,935.6666666666666","size":"100,100"}
+[[→ Niemand glaubt mehr an Märchen.->Egal Brownie]]
+
+:: Weiter 3 in den Bau {"position":"474,935.6666666666666","size":"100,100"}
+[[→ Schritt um Schritt trittst du tiefer in die Dunkelheit.->Zirpen]]
+
+:: Zirpen {"position":"474,1085.6666666666667","size":"100,100"}
+Von Weitem hörst du das sanfte Zirpen einer Gelbbauchunke.
+[[→ Du zückst dein Schweizer Sackmesser und gehst der Unke entgegen.->Unke]]
+[[→ Du erkennst im Singsang der Unke die zweite Harmonie deines Schlaflieds.->Duett]]
+
+:: Unke {"position":"399,1235.6666666666667","size":"100,100"}
+[[→ Du rennst mit erhobenem Messer in die Höhle der Unke, stolperst über einen ungesehenen Stein und landest dein Messer in der klebrigen Feuchte ihres Auges.->Unkentod]]
+
+:: Duett {"position":"549,1235.6666666666667","size":"100,100"}
+Du findest die Unke am Ende vieler verzweigender Tunnels und kannst der Euphorie deines Herzens kaum Worte geben.
+[[→ Der klare, brilliante Gesang der Unke vereint sich mit deiner Stimme und ihr beginnt eine lange musikalische Reise in die Ewigkeit.->Credits]]
+
+:: Unkentod {"position":"399,1385.6666666666667","size":"100,100"}
+[[→ Der Gesang stirbt, du erkennst im verbleibenden Auge der Unke dein eigenes Ego und bist einen Moment lang erstaunt und befreit, bevor du dem Gift ihrer Haut erliegst und zu röcheln beginnst.->Unkenhaut]]
+
+:: Unkenhaut {"position":"91,1438.6666666666667","size":"100,100"}
+[[→ Du öffnest mit dem Messer einen Eingang in die Unke und legst dich in die wohlige Wärme um mit ihr zu verschmelzen – mit den letzten Atemzügen verstummt dein Herz.->Home]]
+
+:: Credits {"position":"651,1391.6666666666667","size":"100,100"}
+The End.
+
+Autorenschaft:
+* Matthias Schwyn
+* Stefan Huber
+* Marianne M. Michel
+[[→ Neuanfang.->Home]]
+
+:: keine Zeit {"position":"1061,401.6666666666667","size":"100,100"}
+Der singende Synthesizer gibt dir den Takt der Schritte
+[[→ 1,2,3 – 1,2,3 deine Füsse suchen im elektronischen knacken einen Walzer und tragen dich weiter->Walzer]]
+[[→ Nicht nur deine Füsse auch die vielen Schmetterlinge tanzen mit dir. Als sich einer auf deiner Hand niederlässt suchst du das Gespräch.->Butterfly-Talk]]
+
+:: weiter vor den Bau {"position":"1648,603.6666666666666","size":"100,100"}
+[[→ Du lauschst den Vögeln, geniesst die Wärme der Sonnenstrahlen auf deiner Haut und merkst zu spät, als sich der Boden unter deinen Füssen öffnet und du Hals über Kopf in die Tiefen der Erde stürzst.->Geblendet]]
+
+:: Walzer {"position":"831,490.6666666666667","size":"100,100"}
+Du tanzt und tanzt… Nicht gut, nicht schlecht aber wie damals in den 90ern – einfach wild und frei. 
+[[→ Du reisst dein T-Shirt vom Leib und der betörende Duft deiner stattlichen Achselhaare zieht die Schmetterlinge in Schaaren an.->Walzer weiter]]
+
+:: Butterfly-Talk {"position":"1251,525.6666666666666","size":"100,100"}
+Seine herzzerreissende Lebensgeschichte scheint eine Melange aus verlorenen K-Pop-Träumen und Scientology-Karriere. 
+[[→ Du nimmst ihn in den Arm und tröstest ihn mit sanften Worten->Trost]]
+[[→ Du machst diesem Trauerspiel ein Ende->Tod dem Schmetterling]]
+
+:: Walzer weiter {"position":"1014,588.6666666666666","size":"100,100"}
+[[→ Nicht nur deine Füsse auch die vielen Schmetterlinge tanzen mit dir. Als sich einer auf deiner Hand niederlässt suchst du das Gespräch.->Butterfly-Talk]]
+
+:: Trost {"position":"931,845.6666666666666","size":"100,100"}
+[[→ Immer inniger schmiegt ihr euch aneinander und du merkst langsam, wie sich der Schmetterling um dich herum verpuppt.->Home]]
+
+:: Tod dem Schmetterling {"position":"1416,603.6666666666666","size":"100,100"}
+[[→ Zack bum klatsch. weiter gehts->weiter vor den Bau]]
