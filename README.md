@@ -1,6 +1,6 @@
 # dos-day-2021
 
-Interactive text adventure from 
-* Matthias Schwyn
-* Stefan Huber
-* Marianne M. Michel
+Interactive text adventure by 
+* [Matthias Schwyn](https://www.weisspunkt.ch/ueber-uns.php)
+* [Stefan Huber](https://signalwerk.ch/)
+* [Marianne M. Michel](https://mariannemmichel.com/)
